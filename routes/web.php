@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Livewire\HomePage;
+use App\Livewire\UserPage;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,5 +17,5 @@ use App\Livewire\HomePage;
 
 Route::get('/', HomePage::class);
 
-// Route::get('/users', UserPage:: class);
+Route::get('/users/{user}', UserPage::class);
 
